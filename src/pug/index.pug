@@ -6,3 +6,60 @@ html(lang="en")
 		title Illumis
 		link(rel="stylesheet", href="styles/main.css")
 	body
+
+		header.header
+			.header__container.header__container--top
+				a.header__logo(href="#")
+					img(src="./img/logo.svg", alt="logo")
+
+				nav.container.nav
+					button.nav__toggle(type="button")
+						span.visually-hidden menu
+					ul.nav__list
+						li
+							a.nav__link.nav__link--showcase(href="#") Витрина
+						li
+							a.nav__link.nav__link--subscribe(href="#") Подписки
+						li
+							a.nav__link.nav__link--video(href="#") Видео
+						li
+							a.nav__link.nav__link--current.nav__link--blogs(href="#") Блоги
+						li
+							a.nav__link.nav__link--top(href="#") Топ
+
+				ul.header__list
+					li
+						a.header__icon.header__icon--search(href="#")
+							span.visually-hidden Search
+					li
+						a.header__icon.header__icon--notification(href="#")
+							span.visually-hidden Notification
+					li
+						a.header__icon.header__icon--add(href="#")
+							span.visually-hidden Add
+					li
+						a.header__icon.header__icon--user(href="#")
+							span.visually-hidden User
+			.header__container.header__container--b-line
+				.header__author.author
+					img.author__ava(src="./img/ava.jpg", alt="profile picture")
+					p.author__name
+						span Zoella
+						| &nbsp;•&nbsp;
+						span Подписаться
+					p.author__subscribers 139K подписчиков
+
+				ul.header__social.social
+					li
+						a.social__link.social__link--instagram
+							span.visually-hidden Instagram
+					li
+						a.social__link.social__link--twitter
+							span.visually-hidden Twitter
+					li
+						a.social__link.social__link--tiktok
+							span.visually-hidden TikTok
+					li
+						a.social__link.social__link--youtube
+							span.visually-hidden Youtube
+				a.header__post(href="#") 76 постов

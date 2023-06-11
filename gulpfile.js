@@ -8,10 +8,6 @@ const {
 
 // clean
 const del = require('del');
-// rename
-const rename = require('gulp-rename');
-// sourcemaps
-const sourcemaps = require('gulp-sourcemaps');
 // browserSync
 const browserSync = require('browser-sync').create();
 // error
@@ -21,12 +17,11 @@ const notify = require('gulp-notify');
 // styles
 const less = require('gulp-less');
 const autoprefixer = require('autoprefixer');
+const gcmq = require('gulp-group-css-media-queries');
 const postcss = require('gulp-postcss');
 const postLess = require('postcss-less');
 const postImport = require('postcss-import');
 const postUrl = require('postcss-url');
-const postMediaMinMax = require('postcss-media-minmax');
-const csso = require('postcss-csso');
 
 
 // scripts
@@ -118,15 +113,10 @@ function styles() {
 			errorHandler: onError
 		}))
 		.pipe(less())
+		.pipe(gcmq())
 		.pipe(postcss([
-			postMediaMinMax(),
-			csso(),
 			autoprefixer(),
 		]))
-		.pipe(rename({
-			basename: 'main',
-			suffix: '.min'
-		}))
 		.pipe(dest(paths.styles.dest, {
 			sourcemaps: "."
 		}))
@@ -211,87 +201,6 @@ exports.html = html;
 // server
 exports.server = server;
 
-exports.build = series(clean, copy, parallel(styles, scripts, html))
+exports.build = series(clean, copy, scripts, parallel(styles, html))
 
-exports.default = series(clean, copy, parallel(scripts, styles, html), server);
-
-/**
- * Дополнительные задачи
- */
-// img
-const squoosh = require('gulp-libsquoosh');
-const gulpSquoosh = require("gulp-squoosh");
-const svgSprite = require('gulp-svg-sprite');
-const svgmin = require('gulp-svgmin');
-// fonts
-const ttf2woff2 = require('gulp-ttf2woff2');
-const ttf2woff = require('gulp-ttf2woff');
-
-// img
-function optiImg() {
-	src(paths.img.src + "/**/*.svg", {
-			base: paths.src
-		})
-		.pipe(svgmin())
-		.pipe(dest(paths.src));
-	return src(paths.img.src + "/**/*.{png,jpg}", {
-			base: paths.src
-		})
-		.pipe(squoosh())
-		.pipe(dest(paths.src));
-}
-
-function createWebp() {
-	return src(paths.img.resource + "/**/*.{jpg,png}")
-		.pipe(
-			squoosh({
-				webp: {}
-			})
-		)
-		.pipe(dest(paths.img.src));
-}
-
-function createAvif() {
-	return src(paths.img.resource + "/**/*.{jpg,png}")
-		.pipe(
-			gulpSquoosh({
-				encodeOptions: {
-					avif: {}
-				}
-			})
-		)
-		.pipe(dest(paths.img.src));
-}
-
-function sprite() {
-	return src(paths.img.resourceSvg + "/*.svg")
-		.pipe(svgSprite({
-			mode: {
-				stack: {
-					sprite: "../sprite.svg"
-				}
-			},
-		}))
-		.pipe(dest(paths.img.src));
-}
-
-// fonts
-function fonts() {
-	src([paths.fonts.resource + '/*.ttf'])
-		.pipe(ttf2woff())
-		.pipe(dest(paths.fonts.src));
-	return src([paths.fonts.resource + '/*.ttf'])
-		.pipe(ttf2woff2())
-		.pipe(dest(paths.fonts.src));
-}
-
-// createWebp
-exports.createWebp = createWebp;
-// createAvif
-exports.createAvif = createAvif;
-// optiImg
-exports.optiImg = optiImg;
-// sprite
-exports.sprite = sprite;
-// fonts
-exports.fonts = fonts;
+exports.default = series(clean, copy, scripts, parallel(styles, html), server);

@@ -113,7 +113,91 @@ html(lang="en")
 							span.visually-hidden Like
 						button.main__footer-icon.main__footer-icon--share(type="button") 527
 							span.visually-hidden Share
-						button.main__footer-icon.main__footer-icon--comments(type="button") 19
+						button.main__footer-icon.main__footer-icon--comments(type="button", data-scroll="comments") 19
 							span.visually-hidden Comments
 						button.main__footer-icon.main__footer-icon--like(type="button")
 							span.visually-hidden Dislike
+			section#comments.comments.container
+				header.comments__header
+					h2 Комментарии #[span 19]
+					select
+						option по популярности
+						option сначала новые
+						option сначала старые
+					.comments__info
+						p Комментировать канал Zoella #[br] могут только подписчики
+						a.comments__subscribe(href="") Подписаться
+				ul.comments__list
+					li
+						.comments__author
+							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36")
+							span #[b andersen] 5 days ago
+						p Zoe, аплодирую стоя! Ни один блогер еще не поднимал эту тему. Для меня актуально как никогда. Во время ПМС испытываю ужасные гормональные скачки. Спрашивала у своего гинеколога что делать, она сказала что ничего, это особенности организма. А оказывается уже придумали средства для смягчения этих симптомов. Обязательно попробую.
+						p.comments__footer
+							button.comments__icon.comments__icon--like(type="button")
+								span.visually-hidden Like
+								| 28
+							button.comments__icon.comments__icon--dislike(type="button")
+								span.visually-hidden Dislike
+					li
+						.comments__author
+							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36")
+							span #[b Stella Maxwell] 5 days ago
+						p А я давно знаю об этом средстве и пользовалась им ни раз. У него кстати накопительный эффект, после того, как несколько раз пропьешь, компоненты накапливаются и продолжают работать. То есть не надо прям постоянно принимать, это удобно.
+						img(src="./img/img-5.jpg", alt="Illumis", width="240", height="427")
+						p.comments__footer
+							button.comments__icon.comments__icon--like(type="button")
+								span.visually-hidden Like
+								| 15
+							button.comments__icon.comments__icon--dislike(type="button")
+								span.visually-hidden Dislike
+					li
+						.comments__author
+							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36")
+							span #[b Eugenie Bouu] 5 days ago
+						p А я считаю что ПМС это абсолютно нормально! Во все времена это было у женщин и ничего, выжили как-то. А тут прям как прорвало всех, отовсюду про ПМС вещают. Делать что ли больше нечего…
+						p.comments__footer
+							button.comments__icon.comments__icon--like(type="button")
+								span.visually-hidden Like
+								| 13
+							button.comments__icon.comments__icon--dislike(type="button")
+								span.visually-hidden Dislike
+						div
+							.comments__author
+								img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36")
+								span #[b i am wavrinka] 5 days ago
+							p Вы не правы, такие гормональные скачки очень влияют на нервную систему, я так себе нервный срыв заработала. Благо попался хороший специалист, который посоветовал не над последствиями работать, а над самой проблемой. И порекомендовал капли Illumis. Мне уже после первого 10-дневного курса стало легче. Теперь пропиваю периодически по необходимости.
+						p.comments__footer
+							button.comments__icon.comments__icon--like(type="button")
+								span.visually-hidden Like
+								| 5
+							button.comments__icon.comments__icon--dislike(type="button")
+								span.visually-hidden Dislike
+					li
+						.comments__author
+							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36")
+							span #[b Ilona Deutsch] 5 days ago
+						p Пробовала Illumis, действительно помогает. У меня во время ПМС были головные боли, апатия, усталость, когда пьешь эти капли, ничего этого нет. Круто что они на растительной основе, сейчас мало таких средств.
+						img(src="./img/img-6.jpg", alt="Illumis", width="240", height="300")
+						p.comments__footer
+							button.comments__icon.comments__icon--like(type="button")
+								span.visually-hidden Like
+								| 5
+							button.comments__icon.comments__icon--dislike(type="button")
+								span.visually-hidden Dislike
+				a.big-button(href="#") Получить скидку #[br] от производителя
+			.aside.container
+				h2 Другие посты Zoella
+				ul.aside__list
+					li
+						img(src="./img/aside-1.jpg", alt="Illumis", width="240", height="162")
+						a(href="#") Cannabigerol (CBG): Uses and Benefits
+						span 30 мая 2023  •  27K прочитали
+					li
+						img(src="./img/aside-2.jpg", alt="Illumis", width="240", height="162")
+						a(href="#") История Запуска Полутора Миллионов Воздушных Шаров
+						span 6 февраля 2023  •  93 откомментили
+					li
+						img(src="./img/aside-3.jpg", alt="Illumis", width="240", height="162")
+						a(href="#") The Best Ways to Use and Consume CBG
+						span 28 марта 2023  •  1095 поделились

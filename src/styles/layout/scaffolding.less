@@ -14,6 +14,7 @@ body {
 
 img {
 	max-width: 100%;
+	height: auto;
 }
 
 .visually-hidden {
@@ -36,4 +37,47 @@ img {
 	margin-left: auto;
 	padding-right: 20px;
 	padding-left: 20px;
+}
+
+h1 {
+	font-size: 32px;
+	line-height: 36px;
+
+	@media (min-width: @min-lg) {
+		font-size: 60px;
+		line-height: 80px;
+
+		& img {
+			width: 46px;
+			height: 46px;
+		}
+	}
+}
+
+.big-button {
+	display: block;
+	width: fit-content;
+	padding: 23px 50px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 22px;
+	text-align: center;
+	color: #E546F3;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 0.04em;
+	border: 1.4px solid #E546F3;
+	border-radius: 16px;
+	transition: background-color var(--transition-duration) var(--transition-function), color var(--transition-duration) var(--transition-function);
+
+	@media (min-width: @min-lg) {
+		padding: 33px 55px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+
+	&:hover {
+		color: #ffffff;
+		background-color: #E546F3;
+	}
 }

@@ -12,20 +12,30 @@ html(lang="en")
 				a.header__logo(href="#")
 					img(src="./img/logo.svg", alt="logo", width="117", height="32")
 
-				nav.container.nav
+				nav.nav
 					button.nav__toggle(type="button")
 						span.visually-hidden menu
 					ul.nav__list
 						li
-							a.nav__link.nav__link--showcase(href="#") Витрина
+							a.nav__link(href="#")
+								include ../img/icon/showcase.svg
+								| Витрина
 						li
-							a.nav__link.nav__link--subscribe(href="#") Подписки
+							a.nav__link(href="#")
+								include ../img/icon/subscribe.svg
+								| Подписки
 						li
-							a.nav__link.nav__link--video(href="#") Видео
+							a.nav__link(href="#")
+								include ../img/icon/video.svg
+								| Видео
 						li
-							a.nav__link.nav__link--current.nav__link--blogs(href="#") Блоги
+							a.nav__link.nav__link--current(href="#")
+								include ../img/icon/blogs.svg
+								| Блоги
 						li
-							a.nav__link.nav__link--top(href="#") Топ
+							a.nav__link(href="#")
+								include ../img/icon/top.svg
+								| Топ
 
 				ul.header__list
 					li

@@ -1,0 +1,45 @@
+@media (min-width: @min-sm) {
+	.social {
+		display: flex;
+		margin: 0;
+		padding: 0;
+		list-style-type: none;
+
+		& li:not(:last-child) {
+			margin-right: 24px;
+		}
+	}
+
+	.social__link {
+		display: block;
+		width: 22px;
+		height: 20px;
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: contain;
+		opacity: 0.2;
+		filter: brightness(0%);
+		transition: opacity var(--transition-duration) var(--transition-function), filter var(--transition-duration) var(--transition-function);
+
+		&:hover {
+			opacity: 1;
+			filter: brightness(100%);
+		}
+
+		&--instagram {
+			background-image: url(../../img/icon/social/instagram-color.svg);
+		}
+
+		&--twitter {
+			background-image: url(../../img/icon/social/twitter-color.svg);
+		}
+
+		&--tiktok {
+			background-image: url(../../img/icon/social/tiktok-color.svg);
+		}
+
+		&--youtube {
+			background-image: url(../../img/icon/social/youtube-color.svg);
+		}
+	}
+}

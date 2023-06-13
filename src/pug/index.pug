@@ -139,7 +139,7 @@ html(lang="en")
 			section#comments.comments.container
 				header.comments__header
 					h2 Комментарии #[span 19]
-					select
+					select.comments__sort
 						option по популярности
 						option сначала новые
 						option сначала старые
@@ -182,17 +182,18 @@ html(lang="en")
 								| 13
 							button.comments__icon.comments__icon--dislike(type="button")
 								span.visually-hidden Dislike
-						div
-							.comments__author
-								img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-								span #[b i am wavrinka] 5 days ago
-							p Вы не правы, такие гормональные скачки очень влияют на нервную систему, я так себе нервный срыв заработала. Благо попался хороший специалист, который посоветовал не над последствиями работать, а над самой проблемой. И порекомендовал капли Illumis. Мне уже после первого 10-дневного курса стало легче. Теперь пропиваю периодически по необходимости.
-						p.comments__footer
-							button.comments__icon.comments__icon--like(type="button")
-								span.visually-hidden Like
-								| 5
-							button.comments__icon.comments__icon--dislike(type="button")
-								span.visually-hidden Dislike
+						ul.comments__list
+							li
+								.comments__author
+									img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
+									span #[b i am wavrinka] 5 days ago
+								p Вы не правы, такие гормональные скачки очень влияют на нервную систему, я так себе нервный срыв заработала. Благо попался хороший специалист, который посоветовал не над последствиями работать, а над самой проблемой. И порекомендовал капли Illumis. Мне уже после первого 10-дневного курса стало легче. Теперь пропиваю периодически по необходимости.
+								p.comments__footer
+									button.comments__icon.comments__icon--like(type="button")
+										span.visually-hidden Like
+										| 5
+									button.comments__icon.comments__icon--dislike(type="button")
+										span.visually-hidden Dislike
 					li
 						.comments__author
 							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")

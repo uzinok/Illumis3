@@ -10,6 +10,9 @@ html(lang="en")
 		link(rel="stylesheet", href="styles/main.css")
 	body
 
+		script
+			include ../../dest/scripts/main.min.js
+
 		header.header
 			.header__container.header__container--top
 				a.header__logo(href="#")
@@ -127,13 +130,12 @@ html(lang="en")
 			footer.main__footer
 				.container
 					p.container
-						button.main__footer-icon.main__footer-icon--like(type="button") 319
-							span.visually-hidden Like
+						button.main__footer-icon.main__footer-icon--like.like(type="button") 319
 						button.main__footer-icon.main__footer-icon--share(type="button") 527
 							span.visually-hidden Share
 						button.main__footer-icon.main__footer-icon--comments(type="button", data-scroll="comments") 19
 							span.visually-hidden Comments
-						button.main__footer-icon.main__footer-icon--dislike(type="button")
+						button.main__footer-icon.main__footer-icon--dislike.dislike(type="button")
 							span.visually-hidden Dislike
 
 			section#comments.comments.container
@@ -153,10 +155,9 @@ html(lang="en")
 							span #[b andersen] 5 days ago
 						p Zoe, аплодирую стоя! Ни один блогер еще не поднимал эту тему. Для меня актуально как никогда. Во время ПМС испытываю ужасные гормональные скачки. Спрашивала у своего гинеколога что делать, она сказала что ничего, это особенности организма. А оказывается уже придумали средства для смягчения этих симптомов. Обязательно попробую.
 						p.comments__footer
-							button.comments__icon.comments__icon--like(type="button")
-								span.visually-hidden Like
+							button.comments__icon.comments__icon--like.like(type="button")
 								| 28
-							button.comments__icon.comments__icon--dislike(type="button")
+							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 					li
 						.comments__author
@@ -166,10 +167,9 @@ html(lang="en")
 						picture.main__picture
 							img(src="./img/img-5.jpg", alt="Illumis", width="240", height="427", loading="lazy")
 						p.comments__footer
-							button.comments__icon.comments__icon--like(type="button")
-								span.visually-hidden Like
+							button.comments__icon.comments__icon--like.like(type="button")
 								| 15
-							button.comments__icon.comments__icon--dislike(type="button")
+							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 					li
 						.comments__author
@@ -177,10 +177,9 @@ html(lang="en")
 							span #[b Eugenie Bouu] 5 days ago
 						p А я считаю что ПМС это абсолютно нормально! Во все времена это было у женщин и ничего, выжили как-то. А тут прям как прорвало всех, отовсюду про ПМС вещают. Делать что ли больше нечего…
 						p.comments__footer
-							button.comments__icon.comments__icon--like(type="button")
-								span.visually-hidden Like
+							button.comments__icon.comments__icon--like.like(type="button")
 								| 13
-							button.comments__icon.comments__icon--dislike(type="button")
+							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 						ul.comments__list
 							li
@@ -189,10 +188,9 @@ html(lang="en")
 									span #[b i am wavrinka] 5 days ago
 								p Вы не правы, такие гормональные скачки очень влияют на нервную систему, я так себе нервный срыв заработала. Благо попался хороший специалист, который посоветовал не над последствиями работать, а над самой проблемой. И порекомендовал капли Illumis. Мне уже после первого 10-дневного курса стало легче. Теперь пропиваю периодически по необходимости.
 								p.comments__footer
-									button.comments__icon.comments__icon--like(type="button")
-										span.visually-hidden Like
+									button.comments__icon.comments__icon--like.like(type="button")
 										| 5
-									button.comments__icon.comments__icon--dislike(type="button")
+									button.comments__icon.comments__icon--dislike.dislike(type="button")
 										span.visually-hidden Dislike
 					li
 						.comments__author
@@ -202,10 +200,9 @@ html(lang="en")
 						picture.main__picture
 							img(src="./img/img-6.jpg", alt="Illumis", width="240", height="300", loading="lazy")
 						p.comments__footer
-							button.comments__icon.comments__icon--like(type="button")
-								span.visually-hidden Like
+							button.comments__icon.comments__icon--like.like(type="button")
 								| 5
-							button.comments__icon.comments__icon--dislike(type="button")
+							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 				a.big-button(href="#") Получить скидку #[br] от производителя
 			.aside.container

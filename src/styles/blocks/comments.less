@@ -41,7 +41,7 @@
 .comments__info {
 	width: 100%;
 	margin-bottom: 20px;
-	padding: 28px 40px;
+	padding: 20px;
 	background: rgba(0, 0, 0, 0.05);
 	border-radius: 8px;
 
@@ -52,14 +52,12 @@
 
 	@media (min-width: @min-md) {
 		margin-bottom: 32px;
-		padding-top: 36px;
-		padding-bottom: 36px;
+		padding: 36px 40px;
 	}
 
 	& p {
 		width: 100%;
 		margin: 0 0 16px;
-		margin: 0;
 		font-size: 13px;
 		line-height: 20px;
 
@@ -71,6 +69,7 @@
 }
 
 .comments__subscribe {
+	display: inline-block;
 	padding: 20px 32px;
 	font-size: 16px;
 	line-height: 20px;
@@ -89,9 +88,9 @@
 }
 
 .container > .comments__list {
+	margin-bottom: 40px;
 	border-top: 1px solid rgba(0, 0, 0, 0.1);
 	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-	margin-bottom: 40px;
 
 	@media (min-width: @min-lg) {
 		padding-bottom: 32px;
@@ -128,17 +127,24 @@
 
 		& ul {
 			position: relative;
+			box-sizing: border-box;
+			max-width: calc(100% + 20px);
+			margin-right: -40px;
 			padding-left: 30px;
 
 			@media (min-width: @min-lg) {
 				padding-left: 60px;
 			}
 
+			& li {
+				padding-right: 0;
+			}
+
 			&::before {
 				content: '';
 				position: absolute;
-				top: 0;
-				left: 0;
+				top: 16px;
+				left: 16px;
 				width: 14px;
 				height: 14px;
 				background-image: url(../../img/icon/reply.svg);

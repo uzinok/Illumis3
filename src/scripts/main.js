@@ -1,17 +1,18 @@
 window.addEventListener('load', function() {
-	// const scrollElem = document.querySelectorAll('[data-href]');
+	const scrollElem = document.querySelectorAll('[data-href]');
 
-	// for (let i = 0; i < scrollElem.length; i++) {
-	// 	scrollElem[i].addEventListener('click', function() {
-	// 		window.location.hash = '#' + this.dataset.href;
-	// 		const element = document.querySelector(`#${this.dataset.href}`);
-	// 		element.scrollIntoView({
-	// 			behavior: "smooth",
-	// 			block: "start",
-	// 			inline: "nearest"
-	// 		});
-	// 	});
-	// }
+	for (let i = 0; i < scrollElem.length; i++) {
+		scrollElem[i].addEventListener('click', function () {
+			console.log(this);
+			window.location.hash = '#' + this.dataset.href;
+			const element = document.querySelector(`#${this.dataset.href}`);
+			element.scrollIntoView({
+				behavior: "smooth",
+				block: "start",
+				inline: "nearest"
+			});
+		});
+	}
 
 	const likes = document.querySelectorAll('.like');
 	for (let i = 0; i < likes.length; i++) {

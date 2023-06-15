@@ -46,3 +46,13 @@ window.addEventListener('load', function() {
 		});
 	}
 });
+function dtime(num) {
+	const date = new Date();
+
+	date.setDate(date.getDate() + num);
+	var options = {
+		month: 'long',
+		day: 'numeric',
+	};
+	document.write(date.toLocaleString("en-US", options));
+}

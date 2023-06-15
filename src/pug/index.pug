@@ -87,8 +87,8 @@ html(lang="en")
 				.container
 					h1 PMS almost ruined my&nbsp;life. #[img(src="./img/icon/18+.svg", alt="18+", width="28", height="28")]
 					.main__info
-						p 26 мая 2023  •  35K прочитали
-						button(type="button", role="link", data-href="comments") 19 комментов
+						p #[script dtime(-5);]  •  35K прочитали
+						button(type="button", role="link", data-href="comments") 18 комментов
 
 			section.container
 
@@ -137,14 +137,14 @@ html(lang="en")
 						button.main__footer-icon.main__footer-icon--like.like(type="button") 319
 						button.main__footer-icon.main__footer-icon--share(type="button") 527
 							span.visually-hidden Share
-						button.main__footer-icon.main__footer-icon--comments(type="button", data-href="comments") 19
+						button.main__footer-icon.main__footer-icon--comments(type="button", data-href="comments") 18
 							span.visually-hidden Comments
 						button.main__footer-icon.main__footer-icon--dislike.dislike(type="button")
 							span.visually-hidden Dislike
 
 			section#comments.comments.container
 				header.comments__header
-					h2 Comments #[span 19]
+					h2 Comments #[span 18]
 					select.comments__sort
 						option по популярности
 						option сначала новые
@@ -155,7 +155,7 @@ html(lang="en")
 				ul.comments__list
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
+							img(src="./img/avatar/ava-1.jpg", alt="profile picture", width="36", height="36", loading="lazy")
 							span #[b andersen] 5 days ago
 						p Zoe, you&rsquo;ve forever earned my&nbsp;respect! No&nbsp;blogger has yet raised this topic. For&nbsp;me, it&rsquo;s more relevant than ever. My&nbsp;hormones go&nbsp;crazy before my&nbsp;period. I&nbsp;asked my&nbsp;gynecologist about the ways of&nbsp;getting through&nbsp;it, but she said that nothing could be&nbsp;really done... And it&nbsp;turns out they have already come up&nbsp;with remedies to&nbsp;mitigate these symptoms. I&rsquo;ll definitely give it&nbsp;a&nbsp;try.
 						p.comments__footer
@@ -165,7 +165,7 @@ html(lang="en")
 								span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
+							img(src="./img/avatar/ava-2.jpg", alt="profile picture", width="36", height="36", loading="lazy")
 							span #[b Stella Maxwell] 5 days ago
 						p I&rsquo;ve known about this product for a&nbsp;long time and&nbsp;I have used it&nbsp;many times. By&nbsp;the way, it&nbsp;has a&nbsp;cumulative effect&nbsp;&mdash; the components accumulate and continue working after you take a&nbsp;couple of&nbsp;courses. That&nbsp;is, you don&rsquo;t need to&nbsp;take the drops all the time, which comes in&nbsp;handy.
 						picture.main__picture
@@ -177,7 +177,7 @@ html(lang="en")
 								span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
+							img(src="./img/avatar/ava-3.jpg", alt="profile picture", width="36", height="36", loading="lazy")
 							span #[b Eugenie Bouu] 5 days ago
 						p The only thing that helps me&nbsp;cope with PMS is&nbsp;sweets. So&nbsp;I&nbsp;always gain 1-2 kilos and then drop them. Apparently, my&nbsp;body needs some joy at&nbsp;such moments, and sweets help with this.
 						p.comments__footer
@@ -185,75 +185,74 @@ html(lang="en")
 								| 13
 							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
-						ul.comments__list
-							li
-								.comments__author
-									img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-									span #[b i am wavrinka] 5 days ago
-								p I&nbsp;think PMS is&nbsp;totally normal! Women used to&nbsp;face this issue at&nbsp;all times, and they survived somehow lol. Nowadays, everyone is&nbsp;crazy about PMS, everywhere! Don&rsquo;t you guys have other topics to&nbsp;discuss, huh?
-								p.comments__footer
-									button.comments__icon.comments__icon--like.like(type="button")
-										| 5
-									button.comments__icon.comments__icon--dislike.dislike(type="button")
-										span.visually-hidden Dislike
+						li
+							.comments__author
+								img(src="./img/avatar/ava-4.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+								span #[b i am wavrinka] 5 days ago
+							p I&nbsp;think PMS is&nbsp;totally normal! Women used to&nbsp;face this issue at&nbsp;all times, and they survived somehow lol. Nowadays, everyone is&nbsp;crazy about PMS, everywhere! Don&rsquo;t you guys have other topics to&nbsp;discuss, huh?
+							p.comments__footer
+								button.comments__icon.comments__icon--like.like(type="button")
+									| 5
+								button.comments__icon.comments__icon--dislike.dislike(type="button")
+									span.visually-hidden Dislike
 							ul.comments__list
 								li
 									.comments__author
-										img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
+										img(src="./img/avatar/ava-5.jpg", alt="profile picture", width="36", height="36", loading="lazy")
 										span #[b Ilona Deutsch] 5 days ago
 									p You are wrong, such hormonal surges greatly affect the nervous system. I&nbsp;got a&nbsp;nervous breakdown because of&nbsp;that. Fortunately, I&nbsp;found a&nbsp;good specialist who told me&nbsp;I should not work on&nbsp;the consequences, but on&nbsp;the problem itself. She recommended Illumis drops. I&nbsp;felt better after the first 10-day course. Now I&nbsp;take it&nbsp;occasionally if&nbsp;needed.
 									picture.main__picture
 										img(src="./img/img-6.jpg", alt="Illumis", width="480", height="601", loading="lazy")
 									p.comments__footer
 										button.comments__icon.comments__icon--like.like(type="button")
-											| 5
+											| 6
 										button.comments__icon.comments__icon--dislike.dislike(type="button")
 											span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-							span #[b Ilona Deutsch] 5 days ago
+							img(src="./img/avatar/ava-6.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+							span #[b Ilona Deutsch] 4 days ago
 						p Zoe, you are not only beautiful on&nbsp;the outside but as&nbsp;well as&nbsp;on&nbsp;the inside. Thanks for sharing these tips.
 						p.comments__footer
 							button.comments__icon.comments__icon--like.like(type="button")
-								| 5
+								| 9
 							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-							span #[b Ilona Deutsch] 5 days ago
+							img(src="./img/avatar/ava-7.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+							span #[b Zoesugg] 4 days ago
 						p Dunno why&nbsp;I read this post, but now&nbsp;I want to&nbsp;comment. My&nbsp;girlfriend just goes wild on&nbsp;her period, threatening to&nbsp;break up&nbsp;with&nbsp;me. Will Illumis help her? Where can&nbsp;I order it&nbsp;from?
 						p.comments__footer
 							button.comments__icon.comments__icon--like.like(type="button")
-								| 5
+								| 0
 							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 						ul.comments__list
 							li
 								.comments__author
-									img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-									span #[b Ilona Deutsch] 5 days ago
+									img(src="./img/avatar/ava-8.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+									span #[b Ilona Deutsch] 4 days ago
 								p Zoesugg: I&nbsp;wish all guys were sensitive like you :) You&rsquo;re doing great taking care of&nbsp;your girlfriend. You can order Illumis drops on&nbsp;the official website, here is&nbsp;the discount link. Good luck!
 								p.comments__footer
 									button.comments__icon.comments__icon--like.like(type="button")
-										| 5
+										| 3
 									button.comments__icon.comments__icon--dislike.dislike(type="button")
 										span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-							span #[b Ilona Deutsch] 5 days ago
+							img(src="./img/avatar/ava-9.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+							span #[b Ilona Deutsch] 4 days ago
 						p Girls who are not fully exposed to&nbsp;PMS will never understand all the challenges this condition brings. When your whole body hurts and cramps, your mood jumps at&nbsp;the speed of&nbsp;light, you can&rsquo;t focus on&nbsp;anything. This happens to&nbsp;me&nbsp;almost every month :(
 						p.comments__footer
 							button.comments__icon.comments__icon--like.like(type="button")
-								| 5
+								| 6
 							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-							span #[b Ilona Deutsch] 5 days ago
+							img(src="./img/avatar/ava-10.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+							span #[b Ilona Deutsch] 4 days ago
 						p The best remedy during PMS is&nbsp;yelling at&nbsp;your husband :))) Just kidding. I&rsquo;ll look into Illumis myself, I&rsquo;m having a&nbsp;hard time these days, too.
 						p.comments__footer
 							button.comments__icon.comments__icon--like.like(type="button")
@@ -262,58 +261,58 @@ html(lang="en")
 								span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-							span #[b Ilona Deutsch] 5 days ago
+							img(src="./img/avatar/ava-11.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+							span #[b Ilona Deutsch] 3 days ago
 						p I&nbsp;tried Illumis and it&nbsp;really helps. I&nbsp;had headaches, apathy, and fatigue during my&nbsp;periods. But all these problems disappear as&nbsp;soon as&nbsp;you start taking these drops. Most importantly, they are plant-based, which is&nbsp;not quite common on&nbsp;the market nowadays.
 						p.comments__footer
 							button.comments__icon.comments__icon--like.like(type="button")
-								| 5
+								| 7
 							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-							span #[b Ilona Deutsch] 5 days ago
+							img(src="./img/avatar/ava-12.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+							span #[b Ilona Deutsch] 3 days ago
 						p Zoe, thanks for bringing this&nbsp;up. I&nbsp;had a&nbsp;fight with my&nbsp;hubby yesterday.. I&nbsp;tried to&nbsp;explain to&nbsp;him that&nbsp;I don&rsquo;t get irritated during periods intentionally, that&rsquo;s all about physiology! But he&nbsp;wouldn&rsquo;t believe&nbsp;it! I&nbsp;even showed him your posting. Thanks for the recommendation, I&rsquo;ve already ordered Illumis.
 						p.comments__footer
 							button.comments__icon.comments__icon--like.like(type="button")
-								| 5
+								| 3
 							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-							span #[b Ilona Deutsch] 5 days ago
+							img(src="./img/avatar/ava-13.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+							span #[b Ilona Deutsch] 2 days ago
 						p My&nbsp;friend just told me&nbsp;about this solution, what a&nbsp;coincidence)))
 						p.comments__footer
 							button.comments__icon.comments__icon--like.like(type="button")
-								| 5
+								| 4
 							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-							span #[b Ilona Deutsch] 5 days ago
+							img(src="./img/avatar/ava-14.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+							span #[b Ilona Deutsch] 2 days ago
 						p Hello everyone! In&nbsp;fact, if&nbsp;you keep ignoring PMS symptoms for a&nbsp;long time, a&nbsp;serious hormonal failure or&nbsp;genital problems can occur. For example, my&nbsp;libido dropped a&nbsp;lot, they searched for the cause, and it&nbsp;turned out to&nbsp;be&nbsp;PMS. Now I&nbsp;take Illumis regularly, I&nbsp;feel much better and my&nbsp;sex drive is&nbsp;coming back.
 						p.comments__footer
 							button.comments__icon.comments__icon--like.like(type="button")
-								| 5
+								| 6
 							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-							span #[b Ilona Deutsch] 5 days ago
+							img(src="./img/avatar/ava-15.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+							span #[b Ilona Deutsch] 2 days ago
 						p Oddly enough, exercise helps me&nbsp;during PMS. I&nbsp;spit out all the anger. Although many people simply do&nbsp;not want to&nbsp;move during this period at&nbsp;all. We&nbsp;are all different.
 						p.comments__footer
 							button.comments__icon.comments__icon--like.like(type="button")
-								| 5
+								| 0
 							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-							span #[b Ilona Deutsch] 5 days ago
+							img(src="./img/avatar/ava-16.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+							span #[b Ilona Deutsch] 2 days ago
 						p Thank God I&nbsp;do not have severe PMS symptoms, but&nbsp;I know from my&nbsp;friends how hard it&nbsp;is. Not everyone gets&nbsp;it, unfortunately :(
 						p.comments__footer
 							button.comments__icon.comments__icon--like.like(type="button")
@@ -322,36 +321,25 @@ html(lang="en")
 								span.visually-hidden Dislike
 					li
 						.comments__author
-							img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-							span #[b Ilona Deutsch] 5 days ago
+							img(src="./img/avatar/ava-17.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+							span #[b Ilona Deutsch] 1 days ago
 						p I&rsquo;m just PMSing right now! I&rsquo;m going crazy and&nbsp;I can&rsquo;t do&nbsp;anything about&nbsp;it: ((( I&nbsp;got into a&nbsp;fight with a&nbsp;coworker. Maybe it&rsquo;s time to&nbsp;order these drops.
 						p.comments__footer
 							button.comments__icon.comments__icon--like.like(type="button")
-								| 5
+								| 3
 							button.comments__icon.comments__icon--dislike.dislike(type="button")
 								span.visually-hidden Dislike
 						ul.comments__list
 							li
 								.comments__author
-									img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-									span #[b Ilona Deutsch] 5 days ago
+									img(src="./img/avatar/ava-18.jpg", alt="profile picture", width="36", height="36", loading="lazy")
+									span #[b Ilona Deutsch] 1 days ago
 								p Same here! My&nbsp;stomach hurts, my&nbsp;head is&nbsp;splitting. I&nbsp;don&rsquo;t even want to&nbsp;get out of&nbsp;bed on&nbsp;days like this. Why didn&rsquo;t I&nbsp;know about Illumis before?
 								p.comments__footer
 									button.comments__icon.comments__icon--like.like(type="button")
-										| 5
+										| 2
 									button.comments__icon.comments__icon--dislike.dislike(type="button")
 										span.visually-hidden Dislike
-								ul.comments__list
-									li
-										.comments__author
-											img(src="./img/ava-defolt.svg", alt="profile picture", width="36", height="36", loading="lazy")
-											span #[b Ilona Deutsch] 5 days ago
-										p Same here! My&nbsp;stomach hurts, my&nbsp;head is&nbsp;splitting. I&nbsp;don&rsquo;t even want to&nbsp;get out of&nbsp;bed on&nbsp;days like this. Why didn&rsquo;t I&nbsp;know about Illumis before?
-										p.comments__footer
-											button.comments__icon.comments__icon--like.like(type="button")
-												| 5
-											button.comments__icon.comments__icon--dislike.dislike(type="button")
-												span.visually-hidden Dislike
 
 				a.big-button(href="#") Get manufacturer #[br] discount
 			.aside.container
@@ -361,22 +349,22 @@ html(lang="en")
 						picture.main__picture
 							img(src="./img/aside-1.jpg", alt="Illumis", width="272", height="185", loading="lazy")
 						a(href="#") Cannabigerol (CBG): Uses and Benefits
-						span 30 мая 2023  •  27K прочитали
+						span #[script dtime(-10);]  •  27K прочитали
 					li
 						picture.main__picture
 							img(src="./img/aside-2.jpg", alt="Illumis", width="272", height="185", loading="lazy")
 						a(href="#") История Запуска Полутора Миллионов Воздушных Шаров
-						span 6 февраля 2023  •  93 откомментили
+						span #[script dtime(-14);]  •  93 откомментили
 					li
 						picture.main__picture
 							img(src="./img/aside-3.jpg", alt="Illumis", width="272", height="185", loading="lazy")
 						a(href="#") The Best Ways to Use and Consume CBG
-						span 28 марта 2023  •  1095 поделились
+						span #[script dtime(-19);]  •  1095 поделились
 		footer.footer
 			.container
 				a.footer__logo(href="#")
 					img(src="./img/logo-white.svg", alt="logo", loading="lazy", width="110", height="30")
-				p © 2023 iBlogs Media LLC™. All rights reserved. Our website services, content, and products are for informational purposes only.
+				p © #[script document.write((new Date).getFullYear());] iBlogs Media LLC™. All rights reserved. Our website services, content, and products are for informational purposes only.
 				ul.footer__list
 					li
 						a(href="#") All about iBlogs

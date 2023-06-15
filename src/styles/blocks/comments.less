@@ -1,4 +1,10 @@
 .comments {
+	margin-bottom: 60px;
+
+	@media (min-width: @min-lg) {
+		margin-bottom: 78px;
+	}
+
 	& h2 {
 		font-size: 24px;
 		line-height: 32px;
@@ -61,6 +67,10 @@
 		font-size: 13px;
 		line-height: 20px;
 
+		@media (min-width: @min-sm) {
+			margin-bottom: 0;
+		}
+
 		@media (min-width: @min-md) {
 			font-size: 16px;
 			line-height: 24px;
@@ -70,7 +80,7 @@
 
 .comments__subscribe {
 	display: inline-block;
-	padding: 20px 32px;
+	padding: 14px 30px;
 	font-size: 16px;
 	line-height: 20px;
 	color: #FFFFFF;
@@ -177,6 +187,7 @@
 
 	& img {
 		margin-right: 10px;
+		border-radius: 50%;
 
 		@media (min-width: @min-md) {
 			width: 64px;

@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--  удалить-->
+    <meta name="robots" content="noindex, nofollow">
+    <!--  удалить-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Illumis</title>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+  <body>
+    <script>"use strict";function dtime(e){var t=new Date;t.setDate(t.getDate()+e);document.write(t.toLocaleString("en-US",{month:"long",day:"numeric"}))}window.addEventListener("load",function(){for(var e=document.querySelectorAll("[data-href]"),t=0;t<e.length;t++)e[t].addEventListener("click",function(){console.log(this),window.location.hash="#"+this.dataset.href,document.querySelector("#".concat(this.dataset.href)).scrollIntoView({behavior:"smooth",block:"start",inline:"nearest"})});for(var i=document.querySelectorAll(".like"),n=0;n<i.length;n++)i[n].addEventListener("click",function(){this.classList.contains("like--down")?(this.classList.remove("like--down"),this.innerText=--this.innerText):(this.classList.add("like--down"),this.innerText=++this.innerText,this.parentNode.querySelector(".dislike--down")&&this.parentNode.querySelector(".dislike--down").classList.toggle("dislike--down"))});for(var o=document.querySelectorAll(".dislike"),r=0;r<o.length;r++)o[r].addEventListener("click",function(){this.classList.toggle("dislike--down"),this.parentNode.querySelector(".like--down")&&this.parentNode.querySelector(".like--down")&&(this.parentNode.querySelector(".like--down").innerText=--this.parentNode.querySelector(".like--down").innerText,this.parentNode.querySelector(".like--down").classList.toggle("like--down"))})});</script>
+    <header class="header">
+      <div class="header__container header__container--top"><a class="header__logo" href="https://getillumis.com/"><svg class="logo" width="180" height="50" viewBox="0 0 180 50" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="logo">
+<path d="M67.9099 15.3629V9.81015H74.0252V15.3629H67.9099ZM67.9099 40.91V17.8439H74.0252V40.91H67.9099ZM90.5653 40.91H78.751V9.81015H90.2503C96.2531 9.81015 100.472 12.6512 100.472 17.9395C100.472 21.6245 98.4753 23.5654 96.2531 24.7356C99.5386 26.0689 101.806 28.0717 101.806 32.1561V32.3361C101.806 37.9789 97.2714 40.91 90.5653 40.91ZM89.7664 15.4923H85.0126V22.5584H89.4514C92.2981 22.5584 94.1209 21.4332 94.1209 19.0028C94.1209 16.6512 92.5175 15.4923 89.7664 15.4923ZM90.5653 27.8692H85.0126V35.1828H90.7397C93.6314 35.1828 95.4092 33.9845 95.4092 31.5823C95.4092 29.18 93.8058 27.8917 90.5653 27.8917V27.8692ZM105.57 40.8875V9.81015H111.685V40.91L105.57 40.8875ZM126.093 41.3601C119.848 41.3601 115.235 36.5387 115.235 29.6414V29.1688C115.235 22.3221 119.887 17.4107 126.177 17.4107C132.467 17.4107 137.035 22.2321 137.035 29.1294V29.602C137.035 36.4712 132.382 41.3826 126.093 41.3826V41.3601ZM130.982 29.1913C130.982 25.3994 129.046 22.7328 126.115 22.7328C123.1 22.7328 121.288 25.3601 121.288 29.1069V29.6245C121.288 33.3713 123.269 36.083 126.2 36.083C129.131 36.083 130.982 33.4557 130.982 29.7089V29.1913ZM149.322 47.5035C146.345 47.5272 143.401 46.8792 140.709 45.6076L142.233 40.7131C144.308 41.838 146.624 42.444 148.984 42.4796C152.821 42.4796 154.717 40.7131 154.717 37.0113V35.5429C153.125 37.6132 151.342 39.166 148.214 39.166C143.6 39.166 139.555 35.5879 139.555 28.1786C139.555 20.8987 143.645 17.3657 148.214 17.3657C151.359 17.3657 153.164 18.9578 154.633 20.7412V17.8158H160.748V36.6399C160.759 44.443 156.793 47.5035 149.299 47.5035H149.322ZM150.183 22.6428C147.6 22.6428 145.682 24.7975 145.682 28.3305C145.682 31.8636 147.578 33.9283 150.183 33.9283C152.787 33.9283 154.751 31.7792 154.751 28.3305C154.728 24.7975 152.748 22.6428 150.16 22.6428H150.183ZM171.949 41.3432C168.945 41.3196 166.023 40.3556 163.595 38.5865L165.575 34.0577C167.825 35.6104 170.076 36.4318 171.949 36.4318C173.586 36.4318 174.453 35.7398 174.453 34.6203C174.453 33.3263 172.765 32.8087 170.312 31.6498C167.342 30.2715 164.326 28.5443 164.326 24.4543C164.326 20.0155 167.775 17.4726 172.202 17.4726C174.733 17.4998 177.209 18.2155 179.364 19.5429L177.598 24.1955C175.662 23.0703 173.721 22.384 172.169 22.384C170.706 22.384 169.918 23.031 169.918 24.0211C169.918 25.1857 171.555 25.7876 174.014 27.0816C177.159 28.7187 180 30.3108 180 34.1871C180.028 38.9297 176.495 41.3432 171.927 41.3432H171.949Z" fill="black"/>
+
+<path class="logo-path-1" d="M21.7328 22.1027L0 18.2658L24.8045 0.246155L21.7328 22.1027Z"/>
+<path class="logo-path-2" d="M19.066 30.3277L0.410583 21.2363L9.31634 48.6455L19.066 30.3277Z"/>
+<path class="logo-path-3" d="M26.059 35.4079L12.2137 49.7538H39.9043L26.059 35.4079Z"/>
+<path class="logo-path-4" d="M27.3193 0.246155L30.3854 22.1027L52.1182 18.2658L27.3193 0.246155Z"/>
+<path class="logo-path-5" d="M33.0519 30.3277L42.8016 48.6455L51.7073 21.2363L33.0519 30.3277Z"/>
+
+</svg>
+</a>
+        <nav class="nav">
+          <button class="nav__toggle" type="button"><span class="visually-hidden">menu</span></button>
+          <ul class="nav__list">
+            <li><a class="nav__link" href="https://getillumis.com/">
+                <svg width="26" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M25.96 9.99a1 1 0 0 0-1.12-.68l-9.5 1.68L14 1.44a1 1 0 0 0-1-.86 1 1 0 0 0-1 .86l-1.34 9.55-9.49-1.68a1 1 0 0 0-1.13.68 1 1 0 0 0 .53 1.18l8.67 4.22-4.53 8.52a1 1 0 0 0 1.61 1.16l6.69-6.9 6.7 6.94a.999.999 0 0 0 .72.31 1 1 0 0 0 .64-.25 1 1 0 0 0 .29-1.27l-4.53-8.52 8.62-4.21a1 1 0 0 0 .51-1.18Z" fill="#000"/><path d="M19.01 3.53a2 2 0 1 1 4 0 2 2 0 0 1-4 0ZM3.31 15.47a1.7 1.7 0 1 0 0 3.4 1.7 1.7 0 0 0 0-3.4Z" fill="#41AFF9"/></svg>Showcase</a></li>
+            <li><a class="nav__link" href="https://getillumis.com/">
+                <svg width="27" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.645 14a1 1 0 0 1-.7-.29l-3.48-3.41a1.001 1.001 0 0 1 1.4-1.43l2.78 2.73 5.42-5.32a1 1 0 1 1 1.42 1.41l-6.12 6a1.001 1.001 0 0 1-.72.31Z" fill="#F14AFF"/><path d="M22.965 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h18Zm0-2h-18a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h18a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4Zm-1 23a1 1 0 0 0-1-1h-14a1 1 0 0 0 0 2h14a1 1 0 0 0 1-1Z" fill="#000"/></svg>Subscriptions</a></li>
+            <li><a class="nav__link" href="https://getillumis.com/">
+                <svg width="27" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.928 2a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h18Zm0-2h-18a4 4 0 0 0-4 4v12a4 4 0 0 0 4 4h18a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4Z" fill="#000"/><path fill-rule="evenodd" clip-rule="evenodd" d="m17.468 9.2-6.17-3.58a.92.92 0 0 0-1.37.8v7.16a.92.92 0 0 0 1.37.8l6.17-3.53a.93.93 0 0 0 0-1.65Z" fill="#FB3A57"/></svg>Video</a></li>
+            <li><a class="nav__link nav__link--current" href="https://getillumis.com/">
+                <svg width="25" height="24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.892 2c4.09 0 6 1.91 6 6v8c0 4.09-1.91 6-6 6h-8c-4.1 0-6-1.91-6-6V8c0-4.09 1.9-6 6-6h8Zm0-2h-8c-5.22 0-8 2.78-8 8v8c0 5.22 2.78 8 8 8h8c5.21 0 8-2.78 8-8V8c0-5.22-2.79-8-8-8Z" fill="#000"/><path class="blogs-hover" d="M17.392 13h-9a1 1 0 0 1 0-2h9a1 1 0 0 1 0 2Zm1-5.5a1 1 0 0 0-1-1h-9a1 1 0 0 0 0 2h9a1 1 0 0 0 1-1Zm-4 9a1 1 0 0 0-1-1h-5a1 1 0 0 0 0 2h5a1 1 0 0 0 1-1Z" fill="currentColor"/></svg>
+                Blogs</a></li>
+            <li><a class="nav__link" href="https://getillumis.com/">
+                <svg width="25" height="26" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m12.891 14.956 1.67 1.67-1.67 1.67-1.67-1.67 1.67-1.67Zm0-2.83-4.5 4.5 4.5 4.5 4.5-4.5-4.5-4.5Z" fill="#26D318"/><path d="M24.441 2.586a1 1 0 0 0-1.37.37l-4.1 7.07a9.39 9.39 0 0 0-1.65-1.22l4-6.87A1 1 0 0 0 20.195.47a1 1 0 0 0-.604.466l-4.09 7.08a9 9 0 0 0-2.6-.39 8.89 8.89 0 0 0-2.6.39L6.211.936a1 1 0 1 0-1.73 1l4 6.87a9 9 0 0 0-1.65 1.22l-4.09-7.07a1 1 0 1 0-1.73 1l4.43 7.67a9 9 0 1 0 15 0l4.44-7.67a.998.998 0 0 0-.44-1.37Zm-11.55 21a7 7 0 1 1 7-7 7 7 0 0 1-7 7.04v-.04Z" fill="#000"/></svg>Top</a></li>
+          </ul>
+        </nav>
+        <ul class="header__list">
+          <li><a class="header__icon header__icon--search" href="https://getillumis.com/"><span class="visually-hidden">Search</span></a></li>
+          <li><a class="header__icon header__icon--notification" href="https://getillumis.com/"><span class="visually-hidden">Notification</span></a></li>
+          <li><a class="header__icon header__icon--add" href="https://getillumis.com/"><span class="visually-hidden">Add</span></a></li>
+          <li><a class="header__icon header__icon--user" href="https://getillumis.com/"><span class="visually-hidden">User</span></a></li>
+        </ul>
+      </div>
+      <div class="header__container header__container--b-line">
+        <div class="container">
+          <div class="header__author author"><img class="author__ava" src="./img/ava.jpg" alt="profile picture" width="36" height="36">
+            <p class="author__name"><span>Zoella</span>&nbsp;•&nbsp;<a href="https://getillumis.com/">Subscribe</a></p>
+            <p class="author__subscribers">139K subscribers</p>
+          </div>
+          <ul class="header__social social">
+            <li><a class="social__link social__link--instagram" href="https://getillumis.com/"><span class="visually-hidden">Instagram</span></a></li>
+            <li><a class="social__link social__link--twitter" href="https://getillumis.com/"><span class="visually-hidden">Twitter</span></a></li>
+            <li><a class="social__link social__link--tiktok" href="https://getillumis.com/"><span class="visually-hidden">TikTok</span></a></li>
+            <li><a class="social__link social__link--youtube" href="https://getillumis.com/"><span class="visually-hidden">Youtube</span></a></li>
+          </ul><a class="header__post" href="https://getillumis.com/">76 posts</a>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <header class="main__header">
+        <div class="container">
+          <h1>PMS almost ruined my&nbsp;life <img src="./img/icon/18+.svg" alt="18+" width="28" height="28"></h1>
+          <div class="main__info">
+            <p>
+              <script>dtime(-5);</script>  •  35K read
+            </p>
+            <button type="button" role="link" data-href="comments">18 comments</button>
+          </div>
+        </div>
+      </header>
+      <section class="container">
+        <p>I&nbsp;never really dared to&nbsp;discuss this topic for a&nbsp;long time, but now&nbsp;I just want to&nbsp;scream it&nbsp;out! I&rsquo;m going to&nbsp;talk about PMS and the fact that it&nbsp;is&nbsp;not just another women&rsquo;s whims, but a&nbsp;real issue that not everyone can cope with.</p>
+        <p>I&nbsp;faced these terrible symptoms to&nbsp;the fullest after giving birth. Sure, I&nbsp;used to&nbsp;have nagging pains in&nbsp;my&nbsp;stomach and chest before my&nbsp;periods, sometimes&nbsp;I was irritable and even angry. PMS symptoms began to&nbsp;interfere with my&nbsp;life and had me&nbsp;depressed, irritated, in&nbsp;pain almost all the time.</p>
+        <picture class="main__picture">
+          <source media="(min-width: 768px)" srcset="./img/img-1.jpg" width="1000" height="700"><img src="./img/img-1@md.jpg" alt="pictyre" width="768" height="538">
+        </picture>
+        <p>All my&nbsp;relatives know that they best not mess with me&nbsp;during this very week before my&nbsp;period. I&nbsp;don&rsquo;t sleep well, I&rsquo;m easily get mad at&nbsp;others, and&nbsp;I can&rsquo;t properly focus on&nbsp;my&nbsp;work. A&nbsp;while ago, I&nbsp;screwed up&nbsp;a&nbsp;major advertising contract just because&nbsp;I freaked out and didn&rsquo;t go&nbsp;to&nbsp;an&nbsp;important meeting. I&nbsp;was tired and just wanted to&nbsp;live a&nbsp;full life!</p>
+        <p>After my&nbsp;last meltdown during PMS, I&nbsp;realized that not only&nbsp;I was suffering, but also my&nbsp;loved ones. I&nbsp;decided to&nbsp;seek help from a&nbsp;specialist because&nbsp;I thought&nbsp;I was experiencing postpartum depression. The doctor explained to&nbsp;me&nbsp;that my&nbsp;depression, frequent mood swings and pain meant that&nbsp;I suffered from severe PMS. My&nbsp;body became more vulnerable after giving birth. This happens very often. These symptoms also appear in&nbsp;girls over 30&nbsp;who have not given birth. My&nbsp;healthcare practitioner treated PMS as&nbsp;a&nbsp;disease and therefore began to&nbsp;provide me&nbsp;with harmful medication. Antispasmodics, painkillers, antidepressants, and hormone pills. Honestly, I&nbsp;was scared that&nbsp;I would have to&nbsp;result in&nbsp;taking all these drugs for several years...</p>
+        <picture class="main__picture"><img src="./img/img-2.jpg" alt="pictyre" width="742" height="472" loading="lazy"></picture>
+        <p>Luckily, I&nbsp;found another specialist who said that there are now a&nbsp;few remedies that help reduce all PMS symptoms. She recommended using <a href="https://getillumis.com/">Illumis</a>. This natural product has completely changed my&nbsp;life for the better! Not only did&nbsp;I become more calm, cheerful and stopped feeling so&nbsp;much pain. I&nbsp;no longer felt so&nbsp;irritated over trifles, and best of&nbsp;all, I&nbsp;completely stopped taking my&nbsp;medication. Even our relationship with Alfie has improved.</p>
+        <p><a href="https://getillumis.com/">Illumis</a> is&nbsp;a&nbsp;herbal remedy based on&nbsp;natural ingredients, which has no&nbsp;analogues yet. The components of&nbsp;the product are selected in&nbsp;such a&nbsp;way that they target all PMS problems at&nbsp;once: optimise the psycho-emotional state, relieve pain, and improve sleep. I&nbsp;would take the oil daily, 10&nbsp;days before the start of&nbsp;your period and&nbsp;I would barely feel any symptoms at&nbsp;all.</p>
+        <picture class="main__picture"><img src="./img/img-3.jpg" alt="pictyre" width="570" height="700" loading="lazy"></picture>
+        <p>The secret of&nbsp;<a href="https://getillumis.com/">Illumis</a> is&nbsp;in&nbsp;the composition. It&nbsp;contains <b>CBD and CBG</b>. Yes, these are cannabidiols derived from the Cannabis Sativa plant, but they are safe and do&nbsp;not make you &laquo;high&raquo;. These ingredients do&nbsp;not have an&nbsp;intoxicating effect and do&nbsp;not destroy the nervous system. On&nbsp;the contrary, they help stimulate your body to&nbsp;work the way it&nbsp;should. <b>CBD and CBG</b> improved my&nbsp;wellbeing 100-fold and kept my&nbsp;hormones from taking over during PMS.</p>
+        <p>I&nbsp;see results with this product. I&nbsp;am no&nbsp;longer worried about pain and weaknesses. I&nbsp;have become more energetic and organized. I&nbsp;even see a&nbsp;reduction in&nbsp;acne that used to&nbsp;pop up&nbsp;before and during my&nbsp;period. I&nbsp;also stopped eating junk food and began going to&nbsp;the gym regularly. The specialist explained the science behind the formula, except all&nbsp;I remember is&nbsp;that it&nbsp;helps the body and main organs in&nbsp;the reproductive duct and brain establish balance and harmony, helping regulate things like hormones, mood, appetite and stress. I&nbsp;have always had complete confidence in&nbsp;this product as&nbsp;it&nbsp;is&nbsp;manufactured in&nbsp;the&nbsp;UK and meets the highest quality standards. I&rsquo;m in&nbsp;love and recommend it&nbsp;to&nbsp;all my&nbsp;female friends!</p>
+        <picture class="main__picture"><img src="./img/img-4.jpg" alt="pictyre" width="742" height="634" loading="lazy"></picture>
+        <p>I&nbsp;shared this with my&nbsp;friends, and not surprisingly, none of&nbsp;them believed such a&nbsp;remedy existed out there. So&nbsp;I&nbsp;made it&nbsp;my&nbsp;duty to&nbsp;share my&nbsp;experiences with <a href="https://getillumis.com/">Illumis</a>. After all, it&nbsp;changed everything for&nbsp;me.</p>
+        <p>So, I&nbsp;took it&nbsp;upon myself to&nbsp;contact the manufacturers of&nbsp;<a href="https://getillumis.com/">Illumis</a> and asked them if&nbsp;they where willing to&nbsp;do&nbsp;a&nbsp;little collaboration. To&nbsp;my&nbsp;surprise, they where actually extremely friendly and allowed me&nbsp;to&nbsp;advertise their product! The solution is&nbsp;really cool and it&nbsp;does not need additional promotion. We&nbsp;managed to&nbsp;agree on&nbsp;a&nbsp;price reduction for my&nbsp;subscribers. This offer is&nbsp;only valid for a&nbsp;few days, so&nbsp;don&rsquo;t miss your chance to&nbsp;order Illumis. Such a&nbsp;deal is&nbsp;unlikely to&nbsp;happen again.</p>
+        <div class="prod">
+          <picture class="main__picture"><img src="./img/prod.png" alt="pictyre" width="146" height="353" loading="lazy"></picture><a class="big-button" href="https://getillumis.com/">Get manufacturer <br> discount</a>
+        </div>
+        <p>Could you please share your stories in&nbsp;the comments about how PMS makes you feel? Please share any other remedies you use to&nbsp;help relieve symptoms.</p>
+      </section>
+      <footer class="main__footer">
+        <div class="container">
+          <p class="container">
+            <button class="main__footer-icon main__footer-icon--like like" type="button">319</button>
+            <button class="main__footer-icon main__footer-icon--share" type="button">527<span class="visually-hidden">Share</span></button>
+            <button class="main__footer-icon main__footer-icon--comments" type="button" data-href="comments">18<span class="visually-hidden">Comments</span></button>
+            <button class="main__footer-icon main__footer-icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+          </p>
+        </div>
+      </footer>
+      <section class="comments container" id="comments">
+        <header class="comments__header">
+          <h2>Comments <span>18</span></h2>
+          <select class="comments__sort">
+            <option>by popularity</option>
+            <option>new ones first</option>
+            <option>first the old ones</option>
+          </select>
+          <div class="comments__info">
+            <p>Only subscribers <br> can comment on the Zoella channel</p><a class="comments__subscribe" href="https://getillumis.com/">Subscribe</a>
+          </div>
+        </header>
+        <ul class="comments__list">
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-1.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>andersen</b> 5 days ago</span></div>
+            <p>Zoe, you&rsquo;ve forever earned my&nbsp;respect! No&nbsp;blogger has yet raised this topic. For&nbsp;me, it&rsquo;s more relevant than ever. My&nbsp;hormones go&nbsp;crazy before my&nbsp;period. I&nbsp;asked my&nbsp;gynecologist about the ways of&nbsp;getting through&nbsp;it, but she said that nothing could be&nbsp;really done... And it&nbsp;turns out they have already come up&nbsp;with remedies to&nbsp;mitigate these symptoms. I&rsquo;ll definitely give it&nbsp;a&nbsp;try.</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">28</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-2.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Stella Maxwell</b> 5 days ago</span></div>
+            <p>I&rsquo;ve known about this product for a&nbsp;long time and&nbsp;I have used it&nbsp;many times. By&nbsp;the way, it&nbsp;has a&nbsp;cumulative effect&nbsp;&mdash; the components accumulate and continue working after you take a&nbsp;couple of&nbsp;courses. That&nbsp;is, you don&rsquo;t need to&nbsp;take the drops all the time, which comes in&nbsp;handy.</p>
+            <picture class="main__picture"><img src="./img/img-5.jpg" alt="Illumis" width="412" height="735" loading="lazy"></picture>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">15</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-3.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Eugenie Bouu</b> 5 days ago</span></div>
+            <p>The only thing that helps me&nbsp;cope with PMS is&nbsp;sweets. So&nbsp;I&nbsp;always gain 1-2 kilos and then drop them. Apparently, my&nbsp;body needs some joy at&nbsp;such moments, and sweets help with this.</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">13</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+            <li>
+              <div class="comments__author"><img src="./img/avatar/ava-4.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>i am wavrinka</b> 5 days ago</span></div>
+              <p>I&nbsp;think PMS is&nbsp;totally normal! Women used to&nbsp;face this issue at&nbsp;all times, and they survived somehow lol. Nowadays, everyone is&nbsp;crazy about PMS, everywhere! Don&rsquo;t you guys have other topics to&nbsp;discuss, huh?</p>
+              <p class="comments__footer">
+                <button class="comments__icon comments__icon--like like" type="button">5</button>
+                <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+              </p>
+              <ul class="comments__list">
+                <li>
+                  <div class="comments__author"><img src="./img/avatar/ava-5.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Ilona Deutsch</b> 5 days ago</span></div>
+                  <p>You are wrong, such hormonal surges greatly affect the nervous system. I&nbsp;got a&nbsp;nervous breakdown because of&nbsp;that. Fortunately, I&nbsp;found a&nbsp;good specialist who told me&nbsp;I should not work on&nbsp;the consequences, but on&nbsp;the problem itself. She recommended <a href="https://getillumis.com/">Illumis</a> drops. I&nbsp;felt better after the first 10-day course. Now I&nbsp;take it&nbsp;occasionally if&nbsp;needed.</p>
+                  <picture class="main__picture"><img src="./img/img-6.jpg" alt="Illumis" width="480" height="601" loading="lazy"></picture>
+                  <p class="comments__footer">
+                    <button class="comments__icon comments__icon--like like" type="button">6</button>
+                    <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+                  </p>
+                </li>
+              </ul>
+            </li>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-6.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Lizbeth</b> 4 days ago</span></div>
+            <p>Zoe, you are not only beautiful on&nbsp;the outside but as&nbsp;well as&nbsp;on&nbsp;the inside. Thanks for sharing these tips.</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">9</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-7.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Zoesugg</b> 4 days ago</span></div>
+            <p>Dunno why&nbsp;I read this post, but now&nbsp;I want to&nbsp;comment. My&nbsp;girlfriend just goes wild on&nbsp;her period, threatening to&nbsp;break up&nbsp;with&nbsp;me. Will <a href="https://getillumis.com/">Illumis</a> help her? Where can&nbsp;I order it&nbsp;from?</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">0</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+            <ul class="comments__list">
+              <li>
+                <div class="comments__author"><img src="./img/avatar/ava-8.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Mary</b> 4 days ago</span></div>
+                <p>Zoesugg: I&nbsp;wish all guys were sensitive like you :) You&rsquo;re doing great taking care of&nbsp;your girlfriend. You can order <a href="https://getillumis.com/">Illumis</a> drops on&nbsp;the official website, here is&nbsp;the discount link. Good luck!</p>
+                <p class="comments__footer">
+                  <button class="comments__icon comments__icon--like like" type="button">3</button>
+                  <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+                </p>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-9.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Lillian</b> 4 days ago</span></div>
+            <p>Girls who are not fully exposed to&nbsp;PMS will never understand all the challenges this condition brings. When your whole body hurts and cramps, your mood jumps at&nbsp;the speed of&nbsp;light, you can&rsquo;t focus on&nbsp;anything. This happens to&nbsp;me&nbsp;almost every month :(</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">6</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-10.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Jean Banks</b> 4 days ago</span></div>
+            <p>The best remedy during PMS is&nbsp;yelling at&nbsp;your husband :))) Just kidding. I&rsquo;ll look into <a href="https://getillumis.com/">Illumis</a> myself, I&rsquo;m having a&nbsp;hard time these days, too.</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">5</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-11.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Jewel</b> 3 days ago</span></div>
+            <p>I&nbsp;tried <a href="https://getillumis.com/">Illumis</a> and it&nbsp;really helps. I&nbsp;had headaches, apathy, and fatigue during my&nbsp;periods. But all these problems disappear as&nbsp;soon as&nbsp;you start taking these drops. Most importantly, they are plant-based, which is&nbsp;not quite common on&nbsp;the market nowadays.</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">7</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-12.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Edwina Bradley</b> 3 days ago</span></div>
+            <p>Zoe, thanks for bringing this&nbsp;up. I&nbsp;had a&nbsp;fight with my&nbsp;hubby yesterday.. I&nbsp;tried to&nbsp;explain to&nbsp;him that&nbsp;I don&rsquo;t get irritated during periods intentionally, that&rsquo;s all about physiology! But he&nbsp;wouldn&rsquo;t believe&nbsp;it! I&nbsp;even showed him your posting. Thanks for the recommendation, I&rsquo;ve already ordered <a href="https://getillumis.com/">Illumis</a>.</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">3</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-13.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Doris</b> 2 days ago</span></div>
+            <p>My&nbsp;friend just told me&nbsp;about this solution, what a&nbsp;coincidence)))</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">4</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-14.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Mariah</b> 2 days ago</span></div>
+            <p>Hello everyone! In&nbsp;fact, if&nbsp;you keep ignoring PMS symptoms for a&nbsp;long time, a&nbsp;serious hormonal failure or&nbsp;genital problems can occur. For example, my&nbsp;libido dropped a&nbsp;lot, they searched for the cause, and it&nbsp;turned out to&nbsp;be&nbsp;PMS. Now I&nbsp;take <a href="https://getillumis.com/">Illumis</a> regularly, I&nbsp;feel much better and my&nbsp;sex drive is&nbsp;coming back.</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">6</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-15.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Marilyn Collins</b> 2 days ago</span></div>
+            <p>Oddly enough, exercise helps me&nbsp;during PMS. I&nbsp;spit out all the anger. Although many people simply do&nbsp;not want to&nbsp;move during this period at&nbsp;all. We&nbsp;are all different.</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">0</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-16.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Susan</b> 2 days ago</span></div>
+            <p>Thank God I&nbsp;do not have severe PMS symptoms, but&nbsp;I know from my&nbsp;friends how hard it&nbsp;is. Not everyone gets&nbsp;it, unfortunately :(</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">5</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+          </li>
+          <li>
+            <div class="comments__author"><img src="./img/avatar/ava-17.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Olivia</b> 1 days ago</span></div>
+            <p>I&rsquo;m just PMSing right now! I&rsquo;m going crazy and&nbsp;I can&rsquo;t do&nbsp;anything about&nbsp;it: ((( I&nbsp;got into a&nbsp;fight with a&nbsp;coworker. Maybe it&rsquo;s time to&nbsp;order these drops.</p>
+            <p class="comments__footer">
+              <button class="comments__icon comments__icon--like like" type="button">3</button>
+              <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+            </p>
+            <ul class="comments__list">
+              <li>
+                <div class="comments__author"><img src="./img/avatar/ava-18.jpg" alt="profile picture" width="36" height="36" loading="lazy"><span><b>Helen Malone</b> 1 days ago</span></div>
+                <p>Same here! My&nbsp;stomach hurts, my&nbsp;head is&nbsp;splitting. I&nbsp;don&rsquo;t even want to&nbsp;get out of&nbsp;bed on&nbsp;days like this. Why didn&rsquo;t I&nbsp;know about <a href="https://getillumis.com/">Illumis</a> before?</p>
+                <p class="comments__footer">
+                  <button class="comments__icon comments__icon--like like" type="button">2</button>
+                  <button class="comments__icon comments__icon--dislike dislike" type="button"><span class="visually-hidden">Dislike</span></button>
+                </p>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <div class="prod"><a class="big-button" href="https://getillumis.com/">Get manufacturer <br> discount</a></div>
+      </section>
+      <div class="aside container">
+        <h2>Other Zolla posts</h2>
+        <ul class="aside__list">
+          <li>
+            <picture class="main__picture"><img src="./img/aside-1.jpg" alt="Illumis" width="272" height="185" loading="lazy"></picture><a href="https://getillumis.com/">Cannabigerol (CBG): Uses and Benefits</a><span>
+              <script>dtime(-10);</script>  •  27K read</span>
+          </li>
+          <li>
+            <picture class="main__picture"><img src="./img/aside-2.jpg" alt="Illumis" width="272" height="185" loading="lazy"></picture><a href="https://getillumis.com/">The History Of Launching One And A Half Million Balloons</a><span>
+              <script>dtime(-14);</script>  •  93 commented out</span>
+          </li>
+          <li>
+            <picture class="main__picture"><img src="./img/aside-3.jpg" alt="Illumis" width="272" height="185" loading="lazy"></picture><a href="https://getillumis.com/">The Best Ways to Use and Consume CBG</a><span>
+              <script>dtime(-19);</script>  •  1095 shared</span>
+          </li>
+        </ul>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container"><a class="footer__logo" href="https://getillumis.com/"><img src="./img/logo-white.svg" alt="logo" loading="lazy" width="110" height="30"></a>
+        <p>© 
+          <script>document.write((new Date).getFullYear());</script> iBlogs Media LLC™. All rights reserved. Our website services, content, and products are for informational purposes only.
+        </p>
+        <ul class="footer__list">
+          <li><a href="https://getillumis.com/">All about iBlogs</a></li>
+          <li><a href="https://getillumis.com/">Secrecy</a></li>
+          <li><a href="https://getillumis.com/">User agreement</a></li>
+          <li><a href="https://getillumis.com/">Contacts</a></li>
+          <li><a href="https://getillumis.com/">iBlogs на iOS и Android</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
